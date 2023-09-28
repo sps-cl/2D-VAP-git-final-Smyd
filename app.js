@@ -2,7 +2,7 @@ const text = document.getElementById("text");
 const pridatTlacitko = document.getElementById("add");
 const seznam = document.getElementById("seznam");
 
-function addItem() {
+function addTodo() {
   const polozka = document.createElement("li");
   polozka.className = "polozka";
   polozka.innerHTML = text.value;
@@ -16,4 +16,4 @@ function addItem() {
   text.value = "";
 }
 
-pridatTlacitko.addEventListener("click", addItem);
+pridatTlacitko.addEventListener("click", addTodo);
